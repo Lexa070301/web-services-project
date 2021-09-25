@@ -1,0 +1,7 @@
+.title {
+    margin: 0;
+    font-family: var(--verdana);
+    color: var(--green-dark);
+    font-size: 24px;
+    font-weight: bold;
+}

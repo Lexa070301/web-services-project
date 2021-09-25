@@ -1,0 +1,72 @@
+.container {
+    max-width: 1440px;
+    width: 95%;
+    margin: 0px auto;
+}
+
+.common-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+}
+
+.common-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.common-input {
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    transition: 0.3s ease all;
+    box-shadow:
+            2.8px 1.1px 2.2px rgba(0, 0, 0, 0.016),
+            6.7px 2.7px 5.3px rgba(0, 0, 0, 0.022),
+            12.5px 5px 10px rgba(0, 0, 0, 0.025),
+            22.3px 8.9px 17.9px rgba(0, 0, 0, 0.03),
+            41.8px 16.7px 33.4px rgba(0, 0, 0, 0.039),
+            100px 40px 80px rgba(0, 0, 0, 0.07);
+
+}
+
+.common-input:focus {
+    box-shadow: none;
+}
+
+.common-error {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: var(--accent);
+}
+
+.common-btn {
+    width: fit-content;
+    background: var(--accent);
+    background: linear-gradient(45deg, var(--accent) 0%, rgba(255,131,82,1) 100%);
+    border-radius: 5px;
+    height: 45px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.common-btn:hover {
+    background: linear-gradient(45deg, var(--accent) 0%, var(--accent) 100%);
+}
